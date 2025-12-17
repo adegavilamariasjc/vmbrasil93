@@ -35,7 +35,7 @@ export function BottomNavigation({ onCartClick }: BottomNavigationProps) {
 
   return (
     <motion.div 
-      className="fixed bottom-0 left-0 w-full glass-nav px-2 py-2 flex justify-around items-end z-50 safe-area-pb" 
+      className="fixed bottom-0 left-0 w-full glass-nav px-2 py-2 flex justify-around items-end z-50 safe-area-pb rounded-t-3xl border-t-2 border-primary/20 shadow-lg" 
       data-testid="bottom-navigation"
       initial={{ y: 0 }}
       animate={{ y: isHome ? 0 : -500 }}
