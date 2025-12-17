@@ -27,7 +27,17 @@ export function Header({ onCartOpen }: HeaderProps) {
   };
 
   return (
-    <header className="sticky top-0 z-50 glass-header rounded-b-3xl border-b-2 border-primary/20 shadow-lg">
+    <header 
+      className="sticky top-0 z-50 overflow-hidden"
+      style={{ 
+        borderBottomLeftRadius: '40px', 
+        borderBottomRightRadius: '40px',
+        borderBottom: '2px solid rgba(138, 43, 226, 0.2)',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+        backgroundColor: 'rgba(255, 255, 255, 0.7)',
+        backdropFilter: 'blur(10px)'
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16 gap-4">
           <Link href="/" className="flex items-center gap-3 group">
